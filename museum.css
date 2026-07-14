@@ -1,0 +1,243 @@
+/* /* /* ==========================
+   Programming Museum
+========================== */
+
+.languages{
+
+    padding:100px 8%;
+
+    background:#0b0f18;
+
+    scroll-margin-top:60px;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+}
+
+.section-title span{
+
+    color:#d6a531;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+}
+
+.section-title h2{
+
+    color:#fff;
+
+    font-size:42px;
+
+    margin:15px 0;
+
+}
+
+.section-title p{
+
+    color:#b8b8b8;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    max-width:700px;
+
+    margin:auto;
+
+}   
+
+/* ==========================
+   Languages Grid
+========================== */
+
+.language-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+@media(max-width:992px){
+
+    .language-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .languages{
+
+        padding:45px 6% 60px;
+
+    }
+
+    .section-title{
+
+        margin-bottom:30px;
+
+    }
+
+    .language-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    .language-card{
+
+        padding:35px 20px;
+
+    }
+
+}
+
+.language-card{
+
+    position:relative;
+
+    background:#111827;
+
+    border-radius:18px;
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+}
+
+.language-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    width:220%;
+
+    height:220%;
+
+    background:conic-gradient(from 0deg,var(--card-color,#d6a531),transparent 35%,transparent 65%,var(--card-color,#d6a531));
+
+    animation:card-spin 4s linear infinite;
+
+    z-index:-2;
+
+}
+
+.language-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:2px;
+
+    background:#111827;
+
+    border-radius:16px;
+
+    z-index:-1;
+
+    transition:.35s;
+
+}
+
+.language-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.language-card:hover::after{
+
+    background:#141c2c;
+
+}
+
+@keyframes card-spin{
+
+    from{ transform:translate(-50%,-50%) rotate(0deg); }
+
+    to{ transform:translate(-50%,-50%) rotate(360deg); }
+
+}
+
+/* لون مختلف لكل كارت */
+
+.language-card:nth-child(1){ --card-color:#e34c26; }   /* HTML/CSS */
+
+.language-card:nth-child(2){ --card-color:#f89820; }   /* Java */
+
+.language-card:nth-child(3){ --card-color:#f0db4f; }   /* JavaScript */
+
+.language-card:nth-child(4){ --card-color:#3776ab; }   /* Python */
+
+.language-card:nth-child(5){ --card-color:#4ea8ff; }   /* C */
+
+.language-card:nth-child(6){ --card-color:#00599c; }   /* C++ */
+
+.language-card:nth-child(7){ --card-color:#a855f7; }   /* C# */
+
+.language-card:nth-child(8){ --card-color:#d6a531; }   /* Rust */
+
+.language-card:nth-child(9){ --card-color:#22d3ee; }   /* Go */
+
+.language-card:nth-child(10){ --card-color:#fb923c; }  /* Swift */
+
+.language-card:nth-child(11){ --card-color:#8892be; }  /* PHP */
+
+.language-card:nth-child(12){ --card-color:#22c55e; }  /* SQL */
+
+.icon{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.language-card h3{
+
+    color:#ffffff;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.language-card span{
+
+    color:#6b7280;
+
+    font-size:15px;
+
+}
