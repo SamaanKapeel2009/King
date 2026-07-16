@@ -1,0 +1,116 @@
+/* ==========================
+   Timeline
+========================== */
+
+.timeline{
+
+    background:#0b1220;
+
+    padding:100px 8%;
+
+}
+
+.timeline-container{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:60px auto 0;
+
+}
+
+.timeline-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    right:32px;
+
+    width:3px;
+
+    height:100%;
+
+    background:#d6a531;
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+    margin-bottom:50px;
+
+    position:relative;
+
+}
+
+.year{
+
+    width:65px;
+
+    height:65px;
+
+    background:#d6a531;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:bold;
+
+    flex-shrink:0;
+
+    z-index:2;
+
+}
+
+.content{
+
+    background:#111827;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    flex:1;
+
+    transition:.3s;
+
+}
+.content:hover{
+
+    transform:translateY(-5px);
+
+    border:1px solid #d6a531;
+
+}
+
+.content h3{
+
+    color:#ffffff;
+
+    margin-bottom:10px;
+
+}
+
+.content p{
+
+    color:#b7b7b7;
+
+    line-height:1.8;
+
+}

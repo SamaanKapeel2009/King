@@ -1,0 +1,295 @@
+/* =====================================
+   أساسيات البرمجة
+===================================== */
+
+.basics-section{
+
+    padding:120px 8%;
+
+    background:#0b1120;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
+}
+
+.basics-content{
+
+    flex:1;
+
+    min-width:320px;
+
+}
+
+.basics-content h2{
+
+    color:white;
+
+    font-size:clamp(30px,4vw,48px);
+
+    margin:14px 0 18px;
+
+}
+
+.algo-title{
+
+    font-size:clamp(24px,3.2vw,38px) !important;
+
+}
+
+.basics-content p{
+
+    color:#9ca3af;
+
+    font-size:clamp(15px,1.6vw,17px);
+
+    line-height:1.8;
+
+    max-width:600px;
+
+    margin-bottom:26px;
+
+}
+
+/* الوسوم (Tags) */
+
+.basics-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:32px;
+
+}
+
+.basics-tags span{
+
+    display:inline-block;
+
+    background:#111827;
+
+    border:1px solid #23314f;
+
+    color:#c7d0e0;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    transition:.3s;
+
+    cursor:default;
+
+}
+
+.basics-tags span:hover{
+
+    border-color:#d6a531;
+
+    color:#d6a531;
+
+}
+
+/* زرار الاختبار التمهيدي */
+
+.quiz-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:transparent;
+
+    color:#fff;
+
+    border:1px solid #2d4263;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.quiz-btn:hover{
+
+    border-color:#d6a531;
+
+    color:#d6a531;
+
+    background:#131c30;
+
+}
+
+/* قائمة التحقق (Checklist) */
+
+.basics-checklist{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.basics-checklist li{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    color:#d6dde8;
+
+    font-size:15px;
+
+}
+
+.basics-checklist .check{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:rgba(214,165,49,.15);
+
+    color:#d6a531;
+
+    font-size:12px;
+
+    flex-shrink:0;
+
+}
+
+/* نافذة الكود */
+
+.code-box{
+
+    flex:1;
+
+    min-width:350px;
+
+    background:#111827;
+
+    border:1px solid #23314f;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+    direction:ltr;
+
+}
+
+.code-header{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:10px;
+
+    padding:18px;
+
+    border-bottom:1px solid #23314f;
+
+}
+
+.red,
+.yellow,
+.green{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+}
+
+.red{
+    background:#ff605c;
+}
+
+.yellow{
+    background:#ffbd44;
+}
+
+.green{
+    background:#00ca4e;
+}
+
+.code-box pre{
+
+    padding:30px 35px;
+
+    color:#d8e4ff;
+
+    font-size:15px;
+
+    line-height:2;
+
+    overflow-x:auto;
+
+    font-family:Consolas, monospace;
+
+    text-align:left;
+
+    direction:ltr;
+
+}
+
+.code-box code{
+
+    direction:ltr;
+
+    unicode-bidi:plaintext;
+
+}
+
+/* تلوين الكود */
+
+.code-box .kw{ color:#c792ea; }     /* let / if / for / console */
+
+.code-box .fn{ color:#82aaff; }     /* .log */
+
+.code-box .str{ color:#8ee7a1; }    /* strings */
+
+.code-box .num{ color:#ffb86c; }    /* numbers */
+
+.code-box .cm{ color:#5c6b8a; }     /* comments */
