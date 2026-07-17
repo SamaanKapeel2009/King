@@ -1,0 +1,298 @@
+/* =====================================
+   الاختبارات التفاعلية
+===================================== */
+
+.quiz-section{
+    padding:120px 8%;
+    background:#090d17;
+}
+
+/* عنوان القسم */
+
+.quiz-section .section-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.quiz-section .section-number{
+    color:#d6a531;
+    font-size:clamp(13px,1.2vw,15px);
+    letter-spacing:2px;
+}
+
+.quiz-section .section-header h2{
+    color:#fff;
+    font-size:clamp(30px,4.5vw,52px);
+    margin:15px 0;
+    font-weight:800;
+}
+
+.quiz-section .section-header p{
+    color:#9aa4b3;
+    font-size:clamp(15px,1.6vw,18px);
+    max-width:700px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* الكارت */
+
+.quiz-card{
+
+    max-width:1100px;
+    margin:auto;
+
+    background:#131b2d;
+
+    border:1px solid #223357;
+
+    border-radius:24px;
+
+    padding:70px 50px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.quiz-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d6a531;
+
+    box-shadow:0 20px 45px rgba(214,165,49,.18);
+
+}
+
+/* الأيقونة */
+
+.quiz-icon{
+
+    width:clamp(60px,7vw,75px);
+    height:clamp(60px,7vw,75px);
+
+    margin:0 auto 30px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:clamp(28px,3.2vw,34px);
+
+    background:rgba(214,165,49,.12);
+
+    color:#d6a531;
+
+    border:2px solid rgba(214,165,49,.25);
+
+}
+
+/* العنوان */
+
+.quiz-card h3{
+
+    color:#fff;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+/* الوصف */
+
+.quiz-card p{
+
+    color:#b9c3d4;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    max-width:760px;
+
+    margin:0 auto 45px;
+
+}
+
+/* الإحصائيات */
+
+.quiz-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:45px;
+
+}
+
+.info-box{
+
+    background:#182238;
+
+    border:1px solid #24385f;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    transition:.3s;
+
+}
+
+.info-box:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d6a531;
+
+}
+
+.info-box span{
+
+    font-size:35px;
+
+    display:block;
+
+    margin-bottom:15px;
+
+}
+
+.info-box h4{
+
+    color:#fff;
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+}
+
+.info-box p{
+
+    color:#9aa4b3;
+
+    margin:0;
+
+    font-size:15px;
+
+}
+
+/* الزر */
+
+.quiz-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    background:#d6a531;
+
+    color:#111;
+
+    padding:18px 42px;
+
+    border-radius:16px;
+
+    font-size:19px;
+
+    font-weight:bold;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(214,165,49,.28);
+
+}
+
+.quiz-btn:hover{
+
+    transform:translateY(-5px);
+
+    background:#efbb45;
+
+    box-shadow:0 18px 40px rgba(214,165,49,.4);
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+    .quiz-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .quiz-section{
+
+        padding:90px 6%;
+
+    }
+
+    .quiz-card{
+
+        padding:45px 25px;
+
+    }
+
+    .quiz-card h3{
+
+        font-size:32px;
+
+    }
+
+    .quiz-card p{
+
+        font-size:16px;
+
+    }
+
+    .quiz-btn{
+
+        width:100%;
+
+        padding:16px;
+
+        font-size:18px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .quiz-card{
+
+        padding:35px 20px;
+
+    }
+
+    .quiz-card h3{
+
+        font-size:26px;
+
+    }
+
+}
