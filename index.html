@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="projects.css">
         <link rel="stylesheet" href="quiz.css">
         <link rel="stylesheet" href="my.css">
+        <link rel="stylesheet" href="message.css">
 
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -54,7 +55,7 @@
                 <label for="menu-check" class="nav-link-wrap"><a href="#my">من نحن</a></label>
             </nav>
 
-            <a href="#" class="btn">تواصل معنا</a>
+            <a href="#contact" class="btn">تواصل معنا</a>
 
         </div>
 
@@ -928,5 +929,127 @@ weights = np.random.rand(<span class="num">3</span>)
             </div>
         </div>
     </section>
+    <section class="contact" id="contact">
+
+    <div class="section-title">
+        <span>// تواصل معنا</span>
+        <h2>لديك سؤال أو اقتراح؟</h2>
+
+        <p>
+            فريق أكاديمية الكينج يسعد بالتواصل معك سواء لسؤال عن
+            مسار تعليمي أو فكرة أو ملاحظة.
+        </p>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- الفورم -->
+
+        <div class="contact-form" id="contactForm">
+
+            <div class="input-row">
+
+                <div class="input-box">
+                    <label>الاسم الكامل</label>
+                    <input type="text" id="cf-name" placeholder="اكتب اسمك">
+                </div>
+
+                <div class="input-box">
+                    <label>البريد الإلكتروني</label>
+                    <input type="email" id="cf-email" placeholder="example@mail.com">
+                </div>
+
+            </div>
+
+            <div class="input-box">
+                <label>الموضوع</label>
+
+                <select id="cf-subject">
+                    <option>سؤال عن مسار تعليمي</option>
+                    <option>اقتراح</option>
+                    <option>الإبلاغ عن مشكلة</option>
+                    <option>أخرى</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>رسالتك</label>
+
+                <textarea
+                    id="cf-message"
+                    rows="7"
+                    placeholder="اكتب رسالتك هنا...">
+                </textarea>
+            </div>
+
+            <button class="send-btn" type="button" id="cf-send">
+                <i class="fa-solid fa-paper-plane"></i>
+                إرسال الرسالة
+            </button>
+
+        </div>
+
+        <!-- معلومات التواصل -->
+
+        <div class="contact-info">
+
+            <div class="info-item">
+
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>info@kingacademy.com</p>
+                </div>
+
+            </div>
+
+            <div class="info-item">
+
+                <div class="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <div>
+                    <h3>واتساب</h3>
+                    <p>01108514164</p>
+                </div>
+
+            </div>
+
+            <div class="info-item">
+
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                    <h3>نعمل عن بعد</h3>
+                    <p>نخدم المتعلمين في كل الوطن العربي</p>
+                </div>
+
+            </div>
+
+            <div class="info-item">
+
+                <div class="icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+
+                <div>
+                    <h3>ساعات الدعم</h3>
+                    <p>من 10 صباحًا حتى 10 مساءً</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <script src="script.js"></script>
 </body>
 </html>
