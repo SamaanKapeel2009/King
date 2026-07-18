@@ -9,6 +9,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const pathsMenu    = document.getElementById('pathsMenu');
     const menuCheck    = document.getElementById('menu-check');
 
+    // إغلاق منيو الموبايل عند الضغط على أي رابط مباشر في النافبار
+    // (الرئيسية / متحف اللغات / تاريخ البرمجة / أشهر المبرمجين / من نحن)
+    // ده اللي بيضمن إنها تقفل صح على الموبايل مش بس الكمبيوتر
+    document.querySelectorAll('.nav-link-wrap a').forEach(function (link) {
+        link.addEventListener('click', function () {
+            if (menuCheck) menuCheck.checked = false;
+        });
+    });
+
     if (!pathsItem || !pathsTrigger || !pathsMenu) return;
 
     // فتح/قفل القائمة بالضغط على "المسارات"
@@ -73,6 +82,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // فتح واتساب في تاب جديد بالرسالة جاهزة
         window.open(whatsappURL, '_blank');
+
+        // تفريغ الفورم عشان لما ترجع للموقع تلاقيه فاضي جاهز لرسالة جديدة
+        document.getElementById('cf-name').value = '';
+        document.getElementById('cf-email').value = '';
+        document.getElementById('cf-subject').selectedIndex = 0;
+        document.getElementById('cf-message').value = '';
     });
 
 });
