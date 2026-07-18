@@ -194,6 +194,138 @@ nav a:hover{
 
 }
 
+/* ==========================
+   Paths Dropdown (المسارات)
+========================== */
+
+.paths-item{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.paths-trigger{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    background:none;
+
+    border:none;
+
+    color:#fff;
+
+    font-family:inherit;
+
+    font-size:14.5px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    padding:0;
+
+    transition:.3s;
+
+}
+
+.paths-trigger:hover{
+
+    color:#d6a531;
+
+}
+
+.paths-arrow{
+
+    font-size:11px;
+
+    transition:.3s;
+
+}
+
+.paths-item.open .paths-arrow{
+
+    transform:rotate(180deg);
+
+}
+
+.paths-menu{
+
+    display:none;
+
+}
+
+.paths-item.open .paths-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+@media(min-width:769px){
+
+    .paths-item.open .paths-menu{
+
+        position:absolute;
+
+        top:calc(100% + 18px);
+
+        right:0;
+
+        min-width:230px;
+
+        background:#0d1424;
+
+        border:1px solid #23314f;
+
+        border-radius:12px;
+
+        padding:10px;
+
+        gap:2px;
+
+        box-shadow:0 15px 30px rgba(0,0,0,.45);
+
+        z-index:1001;
+
+    }
+
+    .paths-menu a{
+
+        display:block;
+
+        padding:10px 14px;
+
+        border-radius:8px;
+
+        font-size:14px;
+
+        white-space:nowrap;
+
+        color:#fff;
+
+        text-decoration:none;
+
+    }
+
+    .paths-menu a:hover{
+
+        background:#182238;
+
+        color:#d6a531;
+
+    }
+
+}
+
 
 /* ==========================
    Buttons
@@ -561,21 +693,135 @@ nav a:hover{
 
         flex-direction:column;
 
+        padding:14px;
+
+        gap:10px;
+
+        max-height:calc(100vh - 56px);
+
+        overflow-y:auto;
+
     }
 
     nav a{
 
-        padding:18px;
+        display:block;
 
-        border-bottom:1px solid #1e293f;
+        padding:16px 18px;
+
+        border-radius:12px;
+
+        background:#111827;
+
+        border:1px solid #23314f;
 
         text-align:center;
+
+        transition:.15s;
+
+    }
+
+    nav a:active{
+
+        background:#d6a531;
+
+        border-color:#d6a531;
+
+        color:#111;
 
     }
 
     #menu-check:checked~nav{
 
         display:flex;
+
+    }
+
+    .paths-item{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        width:100%;
+
+    }
+
+    .paths-trigger{
+
+        width:100%;
+
+        justify-content:space-between;
+
+        padding:16px 18px;
+
+        border-radius:12px;
+
+        background:#111827;
+
+        border:1px solid #23314f;
+
+    }
+
+    .paths-trigger:active{
+
+        background:#d6a531;
+
+        border-color:#d6a531;
+
+        color:#111;
+
+    }
+
+    .paths-item.open .paths-trigger{
+
+        border-bottom-left-radius:0;
+
+        border-bottom-right-radius:0;
+
+    }
+
+    .paths-menu{
+
+        background:#0d1424;
+
+        border:1px solid #23314f;
+
+        border-top:none;
+
+        border-bottom-left-radius:12px;
+
+        border-bottom-right-radius:12px;
+
+        overflow:hidden;
+
+    }
+
+    .paths-menu a{
+
+        display:block;
+
+        padding:14px 18px;
+
+        padding-right:32px;
+
+        font-size:14px;
+
+        color:#c7d0e0;
+
+        text-decoration:none;
+
+        border-top:1px solid #1e293f;
+
+        transition:.15s;
+
+    }
+
+    .paths-menu a:active{
+
+        background:#d6a531;
+
+        color:#111;
 
     }
 
@@ -646,3 +892,4 @@ nav a:hover{
     }
 
 }
+

@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
     <head>
-
+        <title>أكاديمية الكينج | تعلم البرمجة وعلوم الحاسوب</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="أكاديمية الكينج منصة عربية أسسها المبرمج سمعان قابيل لتعليم البرمجة وعلوم الحاسوب من الصفر حتى الاحتراف، مع مشاريع عملية ومسارات تعليمية واختبارات تفاعلية.">
+        <meta name="keywords" content="أكاديمية الكينج,اكاديمية الملك,الملك , تعلم البرمجة, برمجة Samaan Kapeel, The King , King Academy, HTML, CSS, JavaScript, Python, C++, PHP, SQL,المبرمج سمعان قابيل, سمعان قابيل,المبرمج سمعان,  سمعان, المهندس سمعان قابيل,  علوم الحاسوب, تطوير الويب, برمجة للمبتدئين">
+        <meta name="language" content="Arabic">
+        <meta name="author" content=" سمعان قابيل">   
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#0A0F1F">
 
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1.0">
+        <link rel="icon"
+        type="image/png"
+        href="images/academy.jpeg">
 
-        <title>أكاديمية الكينج</title>
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="أكاديمية الكينج | تعلم البرمجة"> 
+        <meta property="og:description" content="ابدأ رحلتك في تعلم البرمجة من الصفر حتى الاحتراف مع أكاديمية الكينج."> 
+        <meta property="og:image" content="https://academyking.com/images/cover.jpg"> 
+        <meta property="og:url" content="https://kingacademy.dev"> 
+        <meta property="og:site_name" content="أكاديمية الكينج"> 
+        <meta property="og:locale" content="ar_AR">
+
+        <meta name="twitter:card" content="summary_large_image"> 
+        <meta name="twitter:title" content="أكاديمية الكينج | تعلم البرمجة وعلوم الحاسوب"> 
+        <meta name="twitter:description" content="تعلم البرمجة وعلوم الحاسوب من الصفر حتى الاحتراف."> 
+        <meta name="twitter:image" content="https://yourdomain.com/images/cover.jpg">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="canonical"
+            href="https://yourdomain.com/">
 
         <link rel="stylesheet" href="Logo.css">
         <link rel="stylesheet" href="museum.css">
@@ -22,13 +43,33 @@
         <link rel="stylesheet" href="quiz.css">
         <link rel="stylesheet" href="my.css">
         <link rel="stylesheet" href="message.css">
+        <link rel="stylesheet" href="footer.css">
 
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+        <script type="application/ld+json">
+            {
+              "@context":"https://schema.org",
+              "@type":"EducationalOrganization",
+              "name":"أكاديمية الكينج",
+              "url":"https://kingacademy.com",
+              "logo":"https://kingacademy.com/images/logo.png",
+            
+              "sameAs":[
+                "https://www.facebook.com/profile.php?id=100090782300090",
+                "https://www.youtube.com/@Samaankapeelfhmy",
+                "https://github.com/SamaanKapeel2009",
+                "https://instagram.com/samaan_kapeel",
+                "https://www.tiktok.com/@samaankapeel"
+              ]
+            }
+        </script>
     </head>
 
-<body>
+<body id="top">
 
+    <div id="progress-bar"></div>
     <!-- Header -->
     <header>
 
@@ -51,7 +92,22 @@
                 <label for="menu-check" class="nav-link-wrap"><a href="#museum">متحف اللغات</a></label>
                 <label for="menu-check" class="nav-link-wrap"><a href="#history">تاريخ البرمجة</a></label>
                 <label for="menu-check" class="nav-link-wrap"><a href="#programmers">أشهر المبرمجين</a></label>
-                <label for="menu-check" class="nav-link-wrap"><a href="#basics">المسارات</a></label>
+
+                <div class="nav-item paths-item" id="pathsItem">
+                    <button type="button" class="paths-trigger" id="pathsTrigger">
+                        <span>المسارات</span>
+                        <span class="paths-arrow">▾</span>
+                    </button>
+                    <div class="paths-menu" id="pathsMenu">
+                        <a href="#basics">أساسيات البرمجة</a>
+                        <a href="#webdev">تطوير الويب</a>
+                        <a href="#python">لغة Python</a>
+                        <a href="#algorithms">الخوارزميات وهياكل البيانات</a>
+                        <a href="#cybersecurity">الأمن السيبراني</a>
+                        <a href="#ai">الذكاء الاصطناعي</a>
+                    </div>
+                </div>
+
                 <label for="menu-check" class="nav-link-wrap"><a href="#my">من نحن</a></label>
             </nav>
 
@@ -106,14 +162,13 @@
 
                 <div class="hero-frame-wrapper">
                     <div class="hero-frame">
-                        <img src="KING-1.jpg" alt="Hero Image">
+                        <img src="images/KING-1.jpg" alt="Hero Image">
                     </div>
                 </div>
 
             </div>
 
         </div>
-
     </section>
     <section class="languages" id="museum">
         <div class="section-title">
@@ -815,10 +870,8 @@ weights = np.random.rand(<span class="num">3</span>)
      الاختبارات التفاعلية
 =========================== -->
 
-
     <section class="quiz-section" id="quiz">    <div class="section-header">
       <span class="section-number">11 // اختبر نفسك</span>
-
 
         <h2>الاختبارات التفاعلية</h2>
 
@@ -840,28 +893,6 @@ weights = np.random.rand(<span class="num">3</span>)
                 بعد كل درس ستجد اختبارًا بسيطًا يساعدك على مراجعة
                 المعلومات ويقيس مدى فهمك للمحتوى.
             </p>
-
-            <div class="quiz-info">
-
-                <div class="info-box">
-                    <span>📚</span>
-                    <h4>10+</h4>
-                    <p>اختبارات</p>
-                </div>
-
-                <div class="info-box">
-                    <span>⭐</span>
-                    <h4>100</h4>
-                    <p>نقطة خبرة</p>
-                </div>
-
-                <div class="info-box">
-                    <span>👑</span>
-                    <h4>Leaderboard</h4>
-                    <p>لوحة المتصدرين</p>
-                </div>
-
-            </div>
 
             <a href="#" class="quiz-btn">
                 🚀 جرب اختبارًا الآن
@@ -900,7 +931,7 @@ weights = np.random.rand(<span class="num">3</span>)
                             👑 The King
                         </span>
                             <div class="profile-image">
-                            <img src="samaan.png"
+                            <img src="images/Samaan.png"
                             alt="سمعان قابيل">
                     </div>
                     <h3>سمعان قابيل</h3>
@@ -1050,6 +1081,86 @@ weights = np.random.rand(<span class="num">3</span>)
     </div>
 
 </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                <h2>👑 أكاديمية الكينج</h2>
+
+                <p>
+                    منصة عربية لتعليم البرمجة وعلوم الحاسوب من الصفر
+                    حتى الاحتراف بقيادة المبرمج سمعان قابيل.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>المسارات</h3>
+
+                <a href="#basics">أساسيات البرمجة</a>
+                <a href="#webdev">تطوير الويب</a>
+                <a href="#python">لغة Python</a>
+                <a href="#algorithms">الخوارزميات وهياكل البيانات</a>
+                <a href="#cybersecurity">الأمن السيبراني</a>
+                <a href="#ai">الذكاء الاصطناعي</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>استكشف</h3>
+
+                <a href="#museum">متحف اللغات</a>
+                <a href="#history">تاريخ البرمجة</a>
+                <a href="#programmers">أشهر المبرمجين</a>
+                <a href="#python-projects">المشاريع</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>الأكاديمية</h3>
+
+                <a href="#my">من نحن</a>
+                <a href="#quiz">الاختبارات</a>
+                <a href="#contact">تواصل معنا</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 أكاديمية الكينج للبرمجة
+                جميع الحقوق محفوظة.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <div class="copyright">
+        <div class="copyright-line"></div>
+        <p>
+            👑 صُمم وطُوِّر بكل
+            <span class="heart">❤</span>
+            بواسطة
+            <span class="my-name">سمعان قابيل</span>
+            |
+            King Programming Academy
+        </p>
+    </div>
+    <!-- زر الرجوع لأعلى -->
+    <a href="#top" class="scroll-top" id="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>  
     <script src="script.js"></script>
 </body>
 </html>

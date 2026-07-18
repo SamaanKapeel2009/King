@@ -20,7 +20,7 @@
 
 .section-title h2 {
     color: #fff;
-    font-size: 58px;
+    font-size: clamp(28px,5vw,42px);
     margin: 18px 0;
     font-weight: 800;
 }
@@ -265,12 +265,6 @@ gap:0;
 
 }
 
-.section-title h2{
-
-font-size:42px;
-
-}
-
 }
 
 @media (max-width:600px){
@@ -285,12 +279,6 @@ padding:80px 6%;
 .contact-info{
 
 padding:25px;
-
-}
-
-.section-title h2{
-
-font-size:34px;
 
 }
 

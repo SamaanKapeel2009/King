@@ -29,7 +29,7 @@
 }
 
 .about-text h2{
-    font-size:clamp(26px,4.5vw,42px);
+    font-size:clamp(28px,5vw,42px);
     color:#fff;
     margin:18px 0 30px;
     font-weight:800;
@@ -368,8 +368,8 @@
     justify-content: center;
     gap: clamp(8px,3vw,15px);
 
-    width: min(240px,80%);
-    height: clamp(56px,15vw,80px);
+    width: min(300px,92%);
+    height: clamp(60px,16vw,84px);
 
     background: #151f33;
     border: 1px solid #24385e;
@@ -378,8 +378,10 @@
     color: #fff;
     text-decoration: none;
 
-    font-size: clamp(18px,5vw,30px);
+    font-size: clamp(17px,4.3vw,25px);
     font-weight: 700;
+
+    padding: 0 18px;
 
     transition: .35s;
 }

@@ -22,7 +22,7 @@
 
 .quiz-section .section-header h2{
     color:#fff;
-    font-size:clamp(30px,4.5vw,52px);
+    font-size:clamp(28px,5vw,42px);
     margin:15px 0;
     font-weight:800;
 }
