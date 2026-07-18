@@ -104,7 +104,7 @@
 
     position:relative;
 
-    width:min(440px,92%);
+    width:min(480px,94%);
 
     background:#131b2d;
 
@@ -164,9 +164,9 @@
 
 .profile-image{
 
-    width:clamp(130px,34vw,210px);
+    width:clamp(150px,38vw,230px);
 
-    height:clamp(130px,34vw,210px);
+    height:clamp(150px,38vw,230px);
 
     margin:30px auto;
 

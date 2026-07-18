@@ -174,6 +174,12 @@ nav{
 
 }
 
+.nav-contact-wrap{
+
+    display:none;
+
+}
+
 nav a{
 
     color:white;
@@ -825,6 +831,36 @@ nav a:hover{
 
     }
 
+    /* عنصر "تواصل معنا" داخل قائمة الموبايل - بلون ذهبي مميز */
+
+    .nav-contact-wrap{
+
+        display:contents;
+
+    }
+
+    .nav-contact-btn{
+
+        background:#d6a531;
+
+        border-color:#d6a531;
+
+        color:#111 !important;
+
+        font-weight:800;
+
+    }
+
+    .nav-contact-btn:active{
+
+        background:#f2be44;
+
+        border-color:#f2be44;
+
+        color:#111 !important;
+
+    }
+
     .hero-container{
 
         flex-direction:column;
@@ -892,4 +928,3 @@ nav a:hover{
     }
 
 }
-
