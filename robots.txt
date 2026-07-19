@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kingacademy.com/sitemap.xml
+Sitemap: https://samaankapeel2009.github.io/King/sitemap.xml
