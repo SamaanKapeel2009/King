@@ -104,11 +104,9 @@
 
     position:relative;
 
-    width:min(480px,94%);
+    width:min(380px,92%);
 
     background:#131b2d;
-
-    border:1px solid #23314f;
 
     border-radius:25px;
 
@@ -120,13 +118,59 @@
 
     overflow:hidden;
 
+    isolation:isolate;
+
+}
+
+.profile-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    width:220%;
+
+    height:220%;
+
+    background:conic-gradient(from 0deg,#d6a531,#4ea8ff,#d6a531,#f2be44,#d6a531);
+
+    animation:profile-border-spin 5s linear infinite;
+
+    z-index:-2;
+
+}
+
+.profile-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:2px;
+
+    background:#131b2d;
+
+    border-radius:23px;
+
+    z-index:-1;
+
+}
+
+@keyframes profile-border-spin{
+
+    from{ transform:translate(-50%,-50%) rotate(0deg); }
+
+    to{ transform:translate(-50%,-50%) rotate(360deg); }
+
 }
 
 .profile-card:hover{
 
     transform:translateY(-10px);
-
-    border-color:#d6a531;
 
     box-shadow:0 20px 45px rgba(214,165,49,.18);
 
@@ -164,9 +208,9 @@
 
 .profile-image{
 
-    width:clamp(150px,38vw,230px);
+    width:clamp(140px,20vw,190px);
 
-    height:clamp(150px,38vw,230px);
+    height:clamp(140px,20vw,190px);
 
     margin:30px auto;
 
@@ -327,6 +371,20 @@
     .about-features{
 
         grid-template-columns:1fr;
+
+    }
+
+    .profile-card{
+
+        width:min(480px,96%);
+
+    }
+
+    .profile-image{
+
+        width:clamp(170px,42vw,230px);
+
+        height:clamp(170px,42vw,230px);
 
     }
 
